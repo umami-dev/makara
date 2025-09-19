@@ -90,7 +90,7 @@ module ActiveRecord
         end
       end
 
-      hijack_method :execute, :exec_query, :exec_no_cache, :exec_cache, :transaction
+      hijack_method :execute, :exec_query, :exec_no_cache, :exec_cache, :transaction, :execute_and_free
       send_to_all :connect, :reconnect!, :verify!, :clear_cache!, :reset!
 
       control_method :close, :steal!, :expire, :lease, :in_use?, :owner, :schema_cache, :pool=, :pool,
