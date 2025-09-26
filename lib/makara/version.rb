@@ -6,10 +6,11 @@ module Makara
       MAJOR = 0
       MINOR = 6
       PATCH = 0
-      PRE = "pre"
+      COMPANY = "tripla"
+      COMPANY_PATCH = 1
 
       def self.to_s
-        [MAJOR, MINOR, PATCH, PRE].compact.join('.')
+        [MAJOR, MINOR, PATCH, COMPANY, COMPANY_PATCH].compact.join('.')
       end
     end
   end
